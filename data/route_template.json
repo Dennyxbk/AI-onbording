@@ -1,0 +1,18 @@
+{
+  "_comment": "Шаблон маршрута новичка. day — календарный день относительно выхода на работу: 0 = первый рабочий день, -5 = за 5 дней до него, 13 = через 13 дней после. owner — кто выполняет этап, confirm_by — кто может отметить его выполненным. departments — только для этих отделов.",
+  "stages": [
+    {"id": "route_confirm", "title": "Руководитель подтверждает маршрут и должность", "day": -5, "owner": "руководитель", "confirm_by": ["руководитель", "hr"], "note": "Карта онбординга", "mandatory": true},
+    {"id": "access_standard", "title": "IT готовит стандартный набор доступов", "day": -3, "owner": "it", "confirm_by": ["it", "hr"], "note": "Стандартный набор доступов", "mandatory": true},
+    {"id": "mentor", "title": "Назначить наставника", "day": -3, "owner": "руководитель", "confirm_by": ["руководитель", "hr"], "note": "Наставник", "mandatory": true},
+    {"id": "docs", "title": "Сдать документы и подписать договор в ЭДО", "day": -1, "owner": "сотрудник", "confirm_by": ["hr"], "note": "Документы при приёме", "mandatory": true},
+    {"id": "first_day", "title": "Первый день: пропуск, рабочее место, встреча с наставником", "day": 0, "owner": "сотрудник", "confirm_by": ["сотрудник", "hr"], "note": "Первый день", "mandatory": true},
+    {"id": "safety_briefing", "title": "Вводный инструктаж по охране труда", "day": 2, "owner": "сотрудник", "confirm_by": ["от", "hr"], "note": "Инструктаж по охране труда", "mandatory": true},
+    {"id": "vpn", "title": "Настроить VPN и двухфакторную аутентификацию", "day": 2, "owner": "сотрудник", "confirm_by": ["сотрудник"], "note": "VPN и удалённая работа", "mandatory": false},
+    {"id": "probation_goals", "title": "Цели на испытательный срок", "day": 4, "owner": "руководитель", "confirm_by": ["руководитель", "hr"], "note": "Испытательный срок", "mandatory": true},
+    {"id": "infosec_test", "title": "Тест по информационной безопасности", "day": 13, "owner": "сотрудник", "confirm_by": ["иб", "hr"], "note": "Политика ИБ кратко", "mandatory": true},
+    {"id": "products_course", "title": "Курс «Продукты компании»", "day": 13, "owner": "сотрудник", "confirm_by": ["сотрудник", "hr"], "note": "Обязательное обучение", "mandatory": true},
+    {"id": "marketing_pd", "title": "Блок про персональные данные в рассылках", "day": 13, "owner": "сотрудник", "confirm_by": ["иб", "hr"], "note": "Отдел маркетинга", "mandatory": true, "departments": ["Маркетинг"]},
+    {"id": "probation_mid", "title": "Промежуточная встреча с руководителем", "day": 45, "owner": "руководитель", "confirm_by": ["руководитель", "hr"], "note": "Испытательный срок", "mandatory": true},
+    {"id": "probation_final", "title": "Итоговая встреча по испытательному сроку", "day": 76, "owner": "руководитель", "confirm_by": ["hr"], "note": "Испытательный срок", "mandatory": true}
+  ]
+}

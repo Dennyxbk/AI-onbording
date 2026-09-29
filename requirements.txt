@@ -1,0 +1,13 @@
+# ядро
+openai>=1.40          # Yandex AI Studio, Ollama, DeepSeek, OpenAI — все через OpenAI-совместимый API
+python-dotenv>=1.0
+pyTelegramBotAPI>=4.20
+
+# ML-роутер (локально, ~678 МБ весов при первом запуске; без него работает заглушка LAYA_OFF=1)
+laya>=0.3
+
+# опционально: Claude
+anthropic>=1.0
+
+# тесты
+pytest>=8

@@ -1,0 +1,35 @@
+{
+  "_comment": "Демо-данные. Даты вида \"+3\" / \"-10\" отсчитываются от сегодняшнего дня при первом запуске (копируется в employees.json). done: этап → смещение даты выполнения.",
+  "employees": [
+    {
+      "id": "smirnova",
+      "name": "Анна Смирнова",
+      "position": "Маркетолог",
+      "department": "Маркетинг",
+      "start_date": "-11",
+      "manager": "Ольга Петрова",
+      "manager_tg": "opetrova_demo",
+      "tg": "asmirnova_demo",
+      "done": {
+        "route_confirm": "-17",
+        "access_standard": "-14",
+        "mentor": "-14",
+        "docs": "-12",
+        "first_day": "-11",
+        "vpn": "-10",
+        "probation_goals": "-5"
+      }
+    },
+    {
+      "id": "petrov",
+      "name": "Иван Петров",
+      "position": "Разработчик",
+      "department": "IT",
+      "start_date": "+3",
+      "manager": "Сергей Орлов",
+      "manager_tg": "sorlov_demo",
+      "tg": "ipetrov_demo",
+      "done": {}
+    }
+  ]
+}
